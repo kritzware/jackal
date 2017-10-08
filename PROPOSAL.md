@@ -64,3 +64,28 @@ a = 10 // Compile time error
 mut string x = "Hello world!\n"
 x = "Goodbye!"
 ```
+```go 
+// Route 3
+int x = 10
+mut int y = 100
+```
+
+### Functions
+```go
+int func test(int x, int y) -> x + y
+string func hello(string name) -> "Hello, {name}"
+
+int func someCalc(mut int x, int y) {
+  return x = (x + 1) * y
+}
+```
+
+### Arrays
+Array length does not need to be defined and is dynamic
+```go
+int grades = [10, 20, 30, 40, 50]
+int empty = []
+
+mut string names = ["Krist", "Kurt", "Dave"]
+names[0] = "John"
+```
