@@ -47,14 +47,14 @@ All the standard types should be supported:
 ### Variables
 Variables should be constants by default and require a type definition
 ```go
-// Route 1
+// Style 1
 let int : a = 100
 a = 10
 
 const int : x = 10
 ```
 ```go
-// Route 2
+// Style 2
 // Constant by default
 int a = 100
 a = 10 // Compile time error
@@ -72,6 +72,7 @@ mut int y = 100
 
 ### Functions
 ```go
+// Style 1 - Type declared at the start
 int func test(int x, int y) -> x + y
 string func hello(string name) -> "Hello, {name}"
 
@@ -80,8 +81,9 @@ int func someCalc(mut int x, int y) {
   return x
 }
 
+// Style 2 - Type declared after params
 func test(int x, int y) int -> x + y
-func hello(string name)) string -> "Hello, {name}"
+func hello(string name) string -> "Hello, {name}"
 
 func someCalc(mut int x, int y) int {
   x = (x + 1) * y
@@ -97,4 +99,23 @@ int empty = []
 
 mut string names = ["Krist", "Kurt", "Dave"]
 names[0] = "John"
+```
+
+### Object
+Name not confirmed, potentially also Frame or Struct. Object properties are constant by default.
+```go
+object Campaign = {
+  id int,
+  name string,
+  mut cost float
+}
+
+Campaign example = { 102193, "Alpha Delta", 123.45 }
+example.cost = 150.5
+
+Campaign another_example = {
+  id: 102193,
+  name: "Alpha Delta",
+  cost: 123.45
+}
 ```
