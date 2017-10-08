@@ -46,18 +46,21 @@ All the standard types should be supported:
 
 ### Variables
 Variables should be constants by default and require a type definition
-```rust
-// Javascript/Rust style
-let int a = 100
+```go
+// Route 1
+let int : a = 100
 a = 10
+
+const int : x = 10
 ```
 ```go
-// Typescript style
-int : a = 100
-a = 10
-```
-```go
-// c/c++ style
+// Route 2
+// Constant by default
 int a = 100
-a = 10
+a = 10 // Compile time error
+
+// Use 'mut' to define mutable variable
+// If a mutable var is defined and not in the program, a compile time warning is given
+mut string x = "Hello world!\n"
+x = "Goodbye!"
 ```
