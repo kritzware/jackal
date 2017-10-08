@@ -43,3 +43,21 @@ All the standard types should be supported:
 - `string`
 - `char`
 - `boolean`
+
+### Variables
+Variables should be constants by default and require a type definition
+```rust
+// Javascript/Rust style
+let int a = 100
+a = 10
+```
+```go
+// Typescript style
+int : a = 100
+a = 10
+```
+```go
+// c/c++ style
+int a = 100
+a = 10
+```
