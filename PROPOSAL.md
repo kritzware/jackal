@@ -119,3 +119,27 @@ Campaign another_example = {
   cost: 123.45
 }
 ```
+
+### Conditionals
+```go
+int x = 5
+
+if(x > 10) {
+  ...
+} else {
+  ...
+}
+
+boolean check = true
+int y = check ? 10 : 5
+```
+
+### Operators
+```go
+x || y // OR
+x && y // AND
+x > y // GREATER THAN
+x < y // LESS THAN
+x >= y // GREATER THAN OR EQUAL
+x <= y // LESS THAN OR EQUAL
+```
