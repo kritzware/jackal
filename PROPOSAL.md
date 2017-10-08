@@ -76,7 +76,16 @@ int func test(int x, int y) -> x + y
 string func hello(string name) -> "Hello, {name}"
 
 int func someCalc(mut int x, int y) {
-  return x = (x + 1) * y
+  x = (x + 1) * y
+  return x
+}
+
+func test(int x, int y) int -> x + y
+func hello(string name)) string -> "Hello, {name}"
+
+func someCalc(mut int x, int y) int {
+  x = (x + 1) * y
+  return x
 }
 ```
 
