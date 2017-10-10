@@ -15,24 +15,20 @@ The language should be/have:
 ### Syntax Overview
 ```go
 func main() {
-  x : int = 2
-  y : int = 3
+  int x = 2
+  int y = 3
   
-  a : int = sum(x, y)
-  b : int = sumShort(x, y)
+  int a = sum(x, y)
+  int b = sumShort(x, y)
   
   printf("a: {a}, b: {b}")
-  
-  for(i: int = 0; i < 10; i++) {
-    print(i)
-  }
 }
 
-int func sum(x: int, y: int) {
+func sum(int x, int y) int {
   return x + y
 }
 
-int sumShort(x, y) -> x + y
+func sumShort(int x, int y) int -> x + y
 ```
 
 ## Syntax
