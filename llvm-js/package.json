@@ -1,0 +1,12 @@
+{
+  "name": "llvm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "node index.js",
+    "build": "node index.js && clang test.ll -o test"
+  },
+  "author": "",
+  "license": "ISC"
+}
