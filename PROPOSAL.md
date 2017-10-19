@@ -10,7 +10,7 @@ The language should be/have:
 - Powerful
 - Easy to use and learn
 - Modern style syntax, similar to Go, Javascript and Python
-- Statically typed
+- Static types
 
 ### Syntax Overview
 ```go
@@ -21,7 +21,13 @@ func main() {
   int a = sum(x, y)
   int b = sumShort(x, y)
   
-  printf("a: {a}, b: {b}")
+  printf("a: {a}, b: {b}") // "a: 5, b: 5"
+
+  mut int c = 0
+  
+  for(c; c < 10; c++) {
+    println(c)
+  }
 }
 
 func sum(int x, int y) int {
